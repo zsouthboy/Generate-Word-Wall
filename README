@@ -1,0 +1,21 @@
+I was inspired by some tweets by Mark Pilgrim () to try my own hand at writing
+a word wall generating script.
+
+As comments littered around the script state, it's currently quite naive
+and does not analyze the words themselves; instead, words are randomly selected
+until they fit (or we try too many times and bail).
+
+Currently the word walls are not _intentionally_ mirrored (nor is that an
+option), however by pure chance they sometimes will be.
+
+
+Example output:
+
+(happens to be mirrored in both directions)
+MEIR
+EYRE
+IRON
+REND
+
+
+

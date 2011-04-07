@@ -1,4 +1,4 @@
-I was inspired by some tweets by Mark Pilgrim () to try my own hand at writing
+I was inspired by some tweets by Mark Pilgrim (http://twitter.com/#!/diveintomark/status/52893029001990144) to try my own hand at writing
 a word wall generating script.
 
 As comments littered around the script state, it's currently quite naive
@@ -18,4 +18,12 @@ IRON
 REND
 
 
+
+Usage (Python 2.x):
+import wordwall
+wall = wordwall.wordwall(4)
+wall.make()
+
+Either you'll get a wordwall back out or a broken one or an iteration error or ...
+Code at its finest!
 

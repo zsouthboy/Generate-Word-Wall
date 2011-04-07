@@ -1,0 +1,31 @@
+until N > matrix width/height:
+
+	1) Generate chosen_word starting with row N character
+		if N=-1 
+			complete failiure, goto BAIL!
+		if N=0, generate random word:
+			create possible words list:
+				for each letter in chosen_word[1:]
+					retrieve list from dictionary starting with letter
+					copy into self.column[letter_position]
+					if any len(list) == 0
+						goto BAIL!
+		else
+			if chosen_word in self.words_tried_at_row[N]
+				if each self.words_tried_at_row[N] in possible words[N]
+					goto BAIL!
+				else
+					goto 1			
+			save chosen_word in self.words_tried_at_row[N]
+
+	2) For each column, N+1..matrix width:
+		if N=0
+			N+1
+			goto 1
+		check words beginning with letters[0..N] in self.column_wordlist[N]
+		if any column gets 0 results
+			N-1
+			goto 1
+		save each filtered column results in self.column_wordlist[N]
+		N+1
+		goto 1

@@ -1,7 +1,7 @@
 #!/usr/bin/python
 VERSION = "generate word wall 0.1 (2011-03-30)"
 WORDLIST = "wordlist.txt"
-TRIES = 100000
+TRIES = 10000000
 MIRRORED = False #TODO this is terrible
 import sys, os
 from wordlist import *
